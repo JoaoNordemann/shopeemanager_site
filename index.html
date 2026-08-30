@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curadoria e Automação Inteligente para WhatsApp</title>
+  <meta name="description" content="Encontre as ofertas mais rentáveis e agende publicações no WhatsApp com horários humanizados, direto do seu computador." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-locked">
+
+  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <form class="gate__card" id="gate-form" novalidate>
+      <div class="gate__mark" aria-hidden="true"></div>
+      <h1 id="gate-title" class="gate__title">Acesso restrito</h1>
+      <p class="gate__subtitle">
+        Esse conteúdo é reservado. Entre com o usuário e a senha que você recebeu.
+      </p>
+
+      <label class="gate__label" for="gate-user">Usuário</label>
+      <input class="gate__input" id="gate-user" name="usuario" type="text" autocomplete="username" required />
+
+      <label class="gate__label" for="gate-pass">Senha</label>
+      <input class="gate__input" id="gate-pass" name="senha" type="password" autocomplete="current-password" required />
+
+      <button class="btn btn--primary gate__submit" type="submit">Entrar</button>
+      <p class="gate__error" id="gate-error" role="alert" aria-live="polite"></p>
+    </form>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        Shopee Manager
+      </a>
+      <nav class="topbar__nav" aria-label="Navegação principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="#download" class="btn btn--ghost">Baixar</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="download">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title">
+            Curadoria e automação inteligente para WhatsApp
+          </h1>
+          <p class="hero__subtitle">
+            Shopee Manager varre milhares de ofertas, calcula o potencial real de cada
+            produto e agenda suas publicações com horários que parecem feitos
+            à mão — tudo rodando no seu próprio computador.
+          </p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary" data-download-btn>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Baixar grátis para Windows
+            </a>
+            <a href="#como-funciona" class="btn btn--text">Ver como funciona</a>
+          </div>
+          <p class="hero__meta">Windows 10 ou superior · Instalação em menos de 2 minutos</p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="app-window">
+            <div class="app-window__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="app-window__body">
+              <div class="mock-toolbar">
+                <div class="mock-pill mock-pill--wide"></div>
+                <div class="mock-pill mock-btn">Atualizar</div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-thumb"></div>
+                <div class="mock-lines">
+                  <div class="mock-line mock-line--80"></div>
+                  <div class="mock-line mock-line--50"></div>
+                </div>
+                <div class="mock-score mock-score--high">9.2</div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-thumb"></div>
+                <div class="mock-lines">
+                  <div class="mock-line mock-line--65"></div>
+                  <div class="mock-line mock-line--40"></div>
+                </div>
+                <div class="mock-score mock-score--mid">7.4</div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-thumb"></div>
+                <div class="mock-lines">
+                  <div class="mock-line mock-line--70"></div>
+                  <div class="mock-line mock-line--45"></div>
+                </div>
+                <div class="mock-score mock-score--high">8.8</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="recursos">
+      <div class="features__inner">
+        <h2 class="features__heading">Feito para quem publica todos os dias</h2>
+        <p class="features__lede">
+          Cada recurso resolve um atrito real de quem cura ofertas manualmente:
+          tempo perdido avaliando produto por produto, horários repetitivos e a
+          necessidade de ficar de olho no relógio o dia inteiro.
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 19V9m6 10V4m6 15v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Filtro de ofertas por score</h3>
+            <p>
+              Cada produto recebe uma nota de rentabilidade calculada a partir de
+              comissão, desconto, avaliações e volume de vendas — você vê primeiro
+              o que realmente vale publicar.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Agendamento humanizado</h3>
+            <p>
+              Os horários de publicação variam de forma natural ao longo do dia,
+              em vez de caírem sempre no mesmo minuto redondo — do jeito que uma
+              pessoa publicaria.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 21h8M12 18v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Modo em segundo plano</h3>
+            <p>
+              Deixe o app minimizado enquanto trabalha em outra coisa. Ele
+              continua avaliando ofertas e preparando as próximas publicações
+              sem precisar da sua atenção.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Exportação em um clique</h3>
+            <p>
+              Legenda, preço e link já formatados e prontos para colar no
+              WhatsApp — com variações de texto para o canal não parecer
+              sempre a mesma publicação.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="como-funciona">
+      <div class="how-it-works__inner">
+        <div class="how-it-works__copy">
+          <h2>Instale, conecte e deixe rodando</h2>
+          <p>
+            Depois de instalado, o Shopee Manager pede apenas as credenciais da sua
+            conta de afiliado. A partir daí, ele mesmo cuida da busca, da
+            pontuação e da fila de publicações — você continua no controle de
+            tudo que sai no seu canal.
+          </p>
+          <a href="#" class="btn btn--primary" data-download-btn>Baixar grátis para Windows</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <p>© <span data-year>2026</span> Shopee Manager. Todos os direitos reservados.</p>
+      <a href="mailto:mostgirlsneed@gmail.com.app">mostgirlsneed@gmail.com.app</a>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
