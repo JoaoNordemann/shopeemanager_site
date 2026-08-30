@@ -9,7 +9,7 @@
  * ou use um bundler como Vite/esbuild. O index.html referencia "main.js".
  */
 
-const DOWNLOAD_URL = "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/latest/download/ShopeeManager-Setup.exe";
+const DOWNLOAD_URL = "https://github.com/joaonordemann/shopee-manager-releases/releases/latest/download/Shopee.Manager.exe";
 
 /**
  * Gate de acesso (usuário + senha)
